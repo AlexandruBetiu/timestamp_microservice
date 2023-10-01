@@ -1,3 +1,6 @@
 from django.db import models
 
-# Create your models here.
+
+class Timestamp(models.Model):
+    unix = models.BigIntegerField()
+    utc = models.CharField(max_length=255)
